@@ -1,13 +1,7 @@
 
 自作したsuperagentをwrapしたメソッド集です。
 
-コンポーネント毎にsuperagentをimportしてHTTP通信を行うとそのたびに処理を記述する必要があり
-ばらつきが出ることが想定されるため作成しました。
-
 superagentのinstallがまだの方は以下のコマンドをターミナルに打って下さい。
 `npm i superagent`
 
-on_api_error()ではサーバーサイドからのレスポンスボディにエラーコードが返却されることを想定しています。
-
-redeux-thunk等のミドルウェアで非同期処理を行った際のcatch句でこのメソッドを使用して下さい。
 
